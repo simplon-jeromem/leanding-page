@@ -1,0 +1,96 @@
+<html>
+    <head>
+      <meta charset='utf-8'/>
+      <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: arial;
+      }
+      body{
+        text-align: center;
+        margin: auto;
+      }
+      #description{
+        margin: auto;
+        text-align: justify;
+        width: 60%;
+      }
+      li img{
+        width: 100px;
+        height: 100px;
+      }
+      .formulaire{
+        width: 60%;
+        margin: auto;
+      }
+      .formulaire p{
+        text-align: justify;
+      }
+      .formulaire .fleche{
+        text-align: center;
+      }
+      form{
+        margin-top: 5%;
+      }
+      #abo{
+        margin-bottom: 5%;
+      }
+      #comment{
+        width: 30%;
+        height: 100px;
+      }
+      ul{
+        margin: 5px;
+      }
+      li{
+        margin: 5px;
+      }
+      button{
+        background-color: green;
+        color: white;
+        width: 60px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .chiffre{
+        margin-bottom: 5%;
+      }
+      #numbers{
+        margin-bottom: 2%;
+      }
+      ul #titre_list{
+        margin-bottom: 1%;
+      }
+      </style>
+    </head>
+    <body style="color:green">
+        <section id="logo"><center><img src="./logo.png"/></center></section>
+        <section id='description' ><p><strong>BeCyclean</strong> est une application et un service qui vous propose de venir récupérer vos déchets recyclables (verre, piles, ampoules, petit electroménager) à votre domicile afin de les déposer dans les espaces de tri correspondants au produit concerné moyennant une faible contribution financière</p>
+        <p>Pour profiter du service, rien de plus simple ! Il vous suffit de commander une course à la date de votre choix via l'application web et mobile <strong>BeCyclean</strong>, puis de déposer sur votre pallier une caisse fournie par nos soins remplie de vos déchets à recycler. En rentrant chez vous, vous retrouvez une caisse vide et toute propre, qui n'attendra plus que d'être remplie à nouveau !</p>
+        <p>Les coursiers se déplacent à vélo dans toute la presqu'île lyonnaise.</p></section><br>
+        <section class='chiffre'>
+          <h1 id='numbers'>Quelques chiffres !</h1>
+          <ul>
+            <li id='titre_list'><strong>Sur 200 personnes questionnées :</strong></li>
+            <li><strong>87%</strong> sont intéréssées par le projet;</li>
+            <li><strong>73%</strong> seraient prêtes à verser entre 2 et 3 euros ponctuellement;</li>
+            <li><strong>71%</strong> utilisent des piles classiques;</li>
+            <li><strong>88%</strong> sont sensibles au recyclage.</li>
+          </ul>
+        </section>
+        <section class='formulaire'>
+                <h2>Soutenez-nous</h2>
+                <p class='fleche'>|</p>
+                <p class='fleche'>v</p>
+                <h2 id='abo'>Abonnez-vous</h2>
+                <p>En vous abonnant vous nous prouvez que ce projet est viable, et vous obtenez toute notre gratitude. De plus, vous serez informé de l'avancement du projet, obtiendrez un accès privilégié à la béta du site et de l'application et votre première commande sera offerte !</p>
+                <form action="recycling.php" method="post">
+                <label><strong>Votre adresse email :</strong></label><br><input name="mail"/><br><br>
+                <label><strong>Votre commentaire  :</strong></label><br><textarea id='comment' maxlenght='250' name="commentaire"></textarea><br><br>
+                <button>valider</button>
+            </from>
+          </section>
+    </body>
+</html>
